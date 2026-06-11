@@ -1,0 +1,20 @@
+{
+  "name": "rednote-downloader",
+  "version": "2.0.0",
+  "description": "小红书内容下载器 - 下载图片、视频，复制正文",
+  "main": "standalone-server.js",
+  "scripts": {
+    "start": "node standalone-server.js",
+    "build": "esbuild standalone-server.js --bundle --platform=node --outfile=dist/rednote-downloader.min.js --minify --external:fs --external:path"
+  },
+  "author": "BOYGAGA",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "express": "^4.18.2",
+    "puppeteer-core": "^22.15.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0"
+  }
+}
