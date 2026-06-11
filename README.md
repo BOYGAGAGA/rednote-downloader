@@ -45,10 +45,10 @@ npm install
 npm start
 ```
 
-### 使用打包版本
+### 使用打包版本（推荐）
 
-1. 下载 `dist/` 文件夹
-2. 运行 `node rednote-downloader.min.js`
+1. 下载 [dist.zip](https://github.com/BOYGAGAGA/rednote-downloader/releases)
+2. 解压后双击 `start.bat` 即可运行
 
 ## 🚀 使用方法
 
