@@ -1,14 +1,33 @@
 {
   "name": "rednote-downloader",
   "version": "2.0.0",
-  "description": "小红书内容下载器 - 下载图片、视频，复制正文",
+  "description": "小红书内容下载器 - 下载图片、视频，提取正文",
   "main": "standalone-server.js",
   "scripts": {
     "start": "node standalone-server.js",
     "build": "esbuild standalone-server.js --bundle --platform=node --outfile=dist/rednote-downloader.min.js --minify --external:fs --external:path"
   },
-  "author": "BOYGAGA",
+  "keywords": [
+    "xiaohongshu",
+    "rednote",
+    "downloader",
+    "scraper",
+    "小红书",
+    "下载器"
+  ],
+  "author": {
+    "name": "BOYGAGA",
+    "url": "https://github.com/BOYGAGAGA"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BOYGAGAGA/rednote-downloader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BOYGAGAGA/rednote-downloader/issues"
+  },
+  "homepage": "https://github.com/BOYGAGAGA/rednote-downloader#readme",
   "dependencies": {
     "axios": "^1.6.0",
     "express": "^4.18.2",
