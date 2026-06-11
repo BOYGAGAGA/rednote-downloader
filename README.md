@@ -9,7 +9,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-16+-green.svg)](https://nodejs.org/)
 [![Stars](https://img.shields.io/github/stars/BOYGAGAGA/rednote-downloader.svg)](https://github.com/BOYGAGAGA/rednote-downloader/stargazers)
 
-📷 下载图片 · 🎬 下载视频 · 📝 提取正文 · 🚀 开机自启
+📷 下载图片 · 🎬 下载视频 · 📝 提取正文 · 🚀 开机自启 · 🔘 页面一键下载
 
 </div>
 
@@ -37,6 +37,7 @@
 - 🚀 **开机自启** — 页面右上角可随时关闭
 - 🌙 **深色/浅色主题** — 护眼切换
 - 🔗 **自动复用登录** — 连接 Edge 浏览器，无需重复登录
+- 🔘 **页面一键下载** — 油猴脚本，在小红书页面直接点击下载
 
 ## 📸 演示
 
@@ -89,11 +90,44 @@ npm start
 
 ## 🚀 使用方法
 
+### 方式一：网页操作
+
 1. 启动后 Edge 浏览器会自动打开
 2. **在 Edge 中登录小红书账号**（首次需要）
 3. 访问 http://localhost:3000
 4. 粘贴小红书笔记链接，点击 **解析**
 5. 查看内容、下载图片/视频
+
+### 方式二：油猴脚本（推荐）
+
+在小红书页面右下角显示下载按钮，点击即自动下载到桌面。
+
+**安装步骤：**
+
+1. 安装 [Tampermonkey](https://www.tampermonkey.net/) 浏览器扩展
+2. 点击安装脚本：[rednote-downloader.user.js](rednote-downloader.user.js)
+3. 或手动创建脚本，将 `rednote-downloader.user.js` 内容粘贴进去
+
+**使用方法：**
+
+1. 启动下载器服务器（`start.bat`）
+2. 打开任意小红书笔记页面
+3. 右下角出现红色下载按钮 ↓
+4. 点击按钮 → 自动解析并保存到桌面
+
+```
+┌──────────────────────────────┐
+│  小红书笔记页面               │
+│                              │
+│  ┌────────────────────┐      │
+│  │  图片 / 视频 / 正文  │      │
+│  └────────────────────┘      │
+│                              │
+│                         ┌──┐ │
+│                         │↓ │ │ ← 点击下载
+│                         └──┘ │
+└──────────────────────────────┘
+```
 
 ### 注意事项
 
@@ -119,6 +153,7 @@ rednote-downloader/
 │       └── feature_request.md
 ├── standalone-server.js      # 服务端源码
 ├── index.html                # 前端页面
+├── rednote-downloader.user.js # 油猴脚本
 ├── start.bat                 # Windows 启动脚本
 ├── start.vbs                 # 静默后台启动
 ├── package.json              # 项目配置
