@@ -186,6 +186,22 @@ rednote-downloader/
 4. 推送分支 (`git push origin feature/xxx`)
 5. 创建 Pull Request
 
+## 👥 贡献者
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/BOYGAGAGA">
+        <img src="https://github.com/BOYGAGAGA.png" width="100px;" alt=""/>
+        <br />
+        <sub><b>BOYGAGA</b></sub>
+      </a>
+      <br />
+      <sub>🎨 设计 · 💻 开发</sub>
+    </td>
+  </tr>
+</table>
+
 ## 📄 License
 
 [MIT](LICENSE) © [BOYGAGA](https://github.com/BOYGAGAGA)
